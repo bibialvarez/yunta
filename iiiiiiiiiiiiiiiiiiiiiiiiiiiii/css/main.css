@@ -1,0 +1,123 @@
+@font-face{
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+/*{
+    outline: 1px solid red;
+} */
+html,body{
+    height: 100%;
+}
+body {
+    font-family:Verdana;
+    font-size: 12px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+header{
+    margin-bottom: 20px;
+}
+.text-white{
+    color: white;
+}
+.redes {
+    padding: 10px 0;
+}
+.redes div{
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    margin: 7px 2.5px;
+}
+.redes div:last-child {
+    height: auto;
+    width: auto;
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+.bg-postula{
+    background:#A5334B;
+    padding: 10px 5px; 
+}
+.bg-fb{
+    background: #46609C;
+}
+.bg-tw{
+    background: #65A8DE;
+}
+.bg-in{
+    background: #3D6B98;
+}
+.bg-vimeo{
+    background: #66B8E8;
+}
+.container{
+	text-align: center;
+}
+.np{
+    padding: 0 !important;
+}
+.menu {
+  background: #fff;
+  border-color: #fff;
+}
+.nav li{
+    padding: 10px 2.5px;
+}
+.nav li a{
+    padding : 0 5px 0 0 !important;
+    border-right:1px solid black; 
+}
+.nav li a:hover, .active {
+  color: #024646 !important;
+ }
+ .swiper-button-next,.swiper-button-prev{
+    background: none;
+    width: auto;
+    height: auto;
+ }
+#slider_1 .swiper-container {
+    width: 100%;
+    height: 455px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: url('../images/foto.jpg') 0 60%;
+    background-size: cover;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.text-slide{
+	z-index:10;
+	color:#FFF;
+	position: absolute;
+	left:0;
+	width: 100%;
+	bottom:50px;
+}
+.t-s-1, .t-s-2{
+	display: inline-block;
+}
+.t-s-2{
+	color:#FAB00A;
+}
+.t-s-bg{
+	background: rgba(0,0,0,0.7);
+	padding: 10px 25px;
+}
