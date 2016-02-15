@@ -13,7 +13,7 @@ $(document).ready(function(){
         autoplayDisableOnInteraction: false
     });
 
-	// header animation
+	// header animation 
 
 	var flag = false;
 	var scroll;

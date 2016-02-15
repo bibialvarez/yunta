@@ -2,7 +2,7 @@
     font-family: myFirstFont;
     src: url(sansation_light.woff);
 }
-/*{
+*{
     outline: 1px solid red;
 } */
 html,body{
@@ -120,4 +120,16 @@ header{
 .t-s-bg{
 	background: rgba(0,0,0,0.7);
 	padding: 10px 25px;
+}
+.meto-etapas p{
+    padding-top: 5px;
+}
+.bg-black{
+    background: #3C3E41;
+}
+.bg-black img{
+    margin: 0 auto;
+}
+.pd40{
+    padding: 40px;
 }
