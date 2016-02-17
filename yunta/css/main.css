@@ -1,6 +1,35 @@
-@font-face{
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
+
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/Miso.eot');
+    src: url('../fonts/Miso.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Miso.woff') format('woff'),
+        url('../fonts/Miso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/Miso-Light.eot');
+    src: url('../fonts/Miso-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Miso-Light.woff') format('woff'),
+        url('../fonts/Miso-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+font-family:"American Typewriter Medium BT";
+src: url("../fonts/American Typewriter Medium BT.ttf");
+}
+@font-face {
+    font-family: 'Knockout';
+    src: url(' ../fonts/Knockout-HTF28-JuniorFeatherwt.eot');
+    src: url(' ../fonts/Knockout-HTF28-JuniorFeatherwt.eot?#iefix') format('embedded-opentype'),
+        url(' ../fonts/Knockout-HTF28-JuniorFeatherwt.woff') format('woff'),
+        url(' ../fonts/Knockout-HTF28-JuniorFeatherwt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 *{
     outline: 1px solid red;
@@ -9,21 +38,27 @@ html,body{
     height: 100%;
 }
 body {
-    font-family:Verdana;
-    font-size: 12px;
+    font-family:'Miso';
+    font-size: 14px;
     color: black;
     margin: 0;
     padding: 0;
     transition: 0.3s;
 }
-header{
-    margin-bottom: 20px;
+h1{
+    font-family: 'Knockout';
+}
+h2,h3,h4,h5,h6{
+    font-family:  'Miso';
+}
+p{
+    font-family: "American Typewriter Medium BT";  
 }
 .text-white{
     color: white;
 }
 .redes {
-    padding: 10px 0;
+    padding: 0 0 20px 0;
 }
 .redes div{
     height: 18px;
@@ -40,6 +75,7 @@ header{
 .bg-postula{
     background:#A5334B;
     padding: 10px 5px; 
+    margin: 10px;
 }
 .bg-fb{
     background: #46609C;
@@ -56,12 +92,23 @@ header{
 .container{
 	text-align: center;
 }
+/********************************** Menu*/
 .np{
     padding: 0 !important;
 }
+
 .menu {
   background: #fff;
   border-color: #fff;
+  padding-top: 75px;
+}
+.menu > ul > li{
+    display: inline-block;
+    margin: 5px;
+    border-right: 1px solid black;
+}
+.menu > ul > li > a{
+    padding-right: 10px;
 }
 .nav li{
     padding: 10px 2.5px;
@@ -87,21 +134,8 @@ header{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: url('../images/foto.jpg') 0 60%;
+    background: url('../images/F_1.jpg') 0 60%;
     background-size: cover;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 .text-slide{
 	z-index:10;
@@ -111,15 +145,115 @@ header{
 	width: 100%;
 	bottom:50px;
 }
-.t-s-1, .t-s-2{
-	display: inline-block;
+header{
+    padding-bottom: 10px;
+}  
+.cuadro1,.cuadro2,.cuadro3,.cuadro4,.down{
+    border: 3px solid black;
+    background: white;
 }
-.t-s-2{
-	color:#FAB00A;
+.cuadro1 p,.cuadro2 p,.cuadro3 p,.cuadro4 p {
+    margin: 0;
 }
-.t-s-bg{
-	background: rgba(0,0,0,0.7);
-	padding: 10px 25px;
+.down{
+    height: 205px;
+    width: 205px;
+    z-index: -11;
+    position: absolute;
+    top: 17%;
+    left: 33%;
+}
+.cuadro1{
+    height: 113px;
+    width:255px;
+    margin-top: 10%;
+    padding: 13px;
+}
+.cuadro2{
+    height: 157px;
+    width:194px;
+    position: relative;
+    right: -10%;
+    padding: 10px;
+}
+.cuadro3{
+    height: 185px;
+    width:188px;
+    margin-top: 15%;
+    margin-left: 12%;
+    padding: 23px;
+}
+.cuadro4{
+    height: 154px;
+    width:154px;
+    position: relative;
+    left: -10%;
+    margin-top: 15%;
+    padding: 14px;
+}
+.text-blue{
+    color: #7EB9DC;
+    font-size: 30px;
+    margin: 0;
+}
+.bg-red{
+    background: #d4485d;
+    margin-top: 18%;
+    right: 105px;
+    position:relative;
+    width: 105%;
+}
+.bg-mision{
+    background: #91bd4f;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+.bg-vision{
+    background: #46474a;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.fl-verde{
+    margin-top: 45%;
+    margin-left: -25%;
+}
+.fl-roja{
+    position: relative;
+    left: -16%;
+}
+.fl-amarilla{
+    position: relative;
+    left: 9%;
+}
+.rotar {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 145px;
+    font-size: 70px;
+    white-space: nowrap;
+    left: -50px;
+}
+.rotar2{
+    transform:rotate(-90deg);
+    position: absolute;
+    top: 30px;
+    font-size: 70px;
+    left: -50px;
+}
+.pos-relative{
+    position: relative;
+}
+.mg-mision-right{
+    margin-right: 15%;
+}
+.mg-vision-right{
+    margin-right: 17%;
+}
+.mg-mision-left{
+    margin-left: -34%;
 }
 .meto-etapas p{
     padding-top: 5px;
@@ -130,6 +264,191 @@ header{
 .bg-black img{
     margin: 0 auto;
 }
+.pos-absolut{
+    height: 150px;
+}
+.parentesis-a ,.parentesis-b{
+    font-size: 55px;
+}
+.pos-absolut .col-xs-3, .pos-absolut .col-xs-6{
+    position: absolute;
+}
+.pos-absolut .col-xs-6{
+    left: 25%;
+}
+.pos-absolut .parentesis-a{
+    left: 20%;
+}
+.pos-absolut .parentesis-b{
+    right: 20%;
+}
+.mg-top1{
+    margin-top: 11px;
+}
+.mg-top2{
+    margin-top: 30px;
+}
+.mg-top3{
+    margin-top: 20px;
+}
+.metodologia{
+    padding-top: 40px;
+}
+.metodologia img{
+    margin: 0 auto;
+}
+.border-bottom-yellow{
+    border-bottom: 20px solid #ffcf3d;
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.border-top-yellow{
+    border-top: 20px solid #ffcf3d;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 10px;   
+}
+.bg-verde li ,.bg-azul li ,.bg-naranja li{
+    text-align: left;
+}
+.bg-azul{
+    background: #579cd0;
+}
+.bg-verde{
+    background:#82ba56;
+}
+.bg-naranja{
+    background: #d9782c;
+}
+.meto-etapas p{
+    font-family: "Miso";
+}
+.color-naranja{
+    color: #d9782c;
+}
+.color-verde{
+    color: #82ba56;
+}
+.color-rojo{
+    color: #b33a55;
+}
+.color-amarillo{
+    color: #f3da44;
+}
+.color-azul{
+    color: #579cd0;
+}
+.raya1{
+    border: 2px solid white;
+    margin: 10% auto;
+}
+.raya2{
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    margin: 15% 15% 11% 27%;
+    height: 50px;
+    width: 70%;  
+}
+.raya3{
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    margin: 5% 0;
+    height: 50px;
+    width: 70%;
+}
+.raya4{
+    border: 2px solid white;
+    margin: 17% 0 3px;
+    width: 95%;
+    display: inline-block;
+}
+.raya5 ,.raya6 ,.raya7{
+    border: 1px solid white;
+    margin: 0 0 3px;
+}
+.raya5{
+    width: 60px;
+}
+.raya6{
+    width: 100px;
+}
+.raya7{
+    width: 140px;
+}
+.raya8{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 5% 0;
+    height: 25px;
+    width: 100px;
+}
+.icon-up{
+    position: relative;
+    top: -32px;
+    right: 6px;
+    transform: rotate(-90deg);
+}
+.pd10{
+    padding: 10px;
+}
 .pd40{
     padding: 40px;
+}
+hr{
+    border: 1px solid #858585;
+}
+.text-end{
+    text-align: end;
+}
+.mg-costados{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.pd-rg .color-amarillo{
+    padding-right: 50px;
+}
+.hombres-azules{
+    top: -150px;
+    position: relative;
+}
+.proyectos p{
+    text-align: center;
+    font-family: "Miso";
+    font-size: 20px;
+}
+.proyectos .col-sm-2{
+    margin: 0 11px;
+}
+.aliados li {
+    list-style-type: none;
+}
+.inline{
+    display: inline-block;
+}
+.linea-tiempo p{
+    font-size: 40px;
+    padding: 10px 20px;
+}
+/*********MEDIA QUERIES*********/
+@media (max-width: 990px){
+  .pos-rel .rotar{
+    transform:rotate(360deg);
+    position: inherit;
+  }
+  .cuadro1 ,.cuadro2 ,.cuadro3 ,.cuadro4{
+    height: auto;
+    width: auto;
+    margin: auto;
+    position: static;
+  }
+  .que-ocurre img{
+    margin: auto;
+    display: inline;
+  }
+  .bg-red{
+    margin: auto;
+    right: 0;
+    width: auto;
+  }
 }
